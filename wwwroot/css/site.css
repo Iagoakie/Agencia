@@ -1,0 +1,302 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Pagina Inicial */
+
+.u-section-1 {
+    background-image: none;
+    min-height: 858px;
+}
+
+    .u-section-1 .u-text-1 {
+        margin: 60px 161px 0;
+    }
+
+    .u-section-1 .u-text-2 {
+        font-style: italic;
+        width: 674px;
+        margin: 20px auto 0;
+    }
+
+    .u-section-1 .u-image-1 {
+        height: 491px;
+        margin: 160px auto 0 0 !important;
+    }
+
+    .u-section-1 .u-list-1 {
+        width: 1140px;
+        margin: -601px auto 60px !important;
+    }
+
+    .u-section-1 .u-repeater-1 {
+        grid-template-columns: calc(33.3333% - 20px) calc(33.3333% - 20px) calc(33.3333% - 20px);
+        grid-gap: 30px 30px;
+        min-height: 339px;
+    }
+
+    .u-section-1 .u-list-item-1 {
+        background-image: none;
+        box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+    }
+
+    .u-section-1 .u-container-layout-1 {
+        padding: 30px;
+    }
+
+    .u-section-1 .u-icon-1 {
+        height: 64px;
+        width: 64px;
+        background-image: none;
+        margin: 0 auto 0 0;
+    }
+
+    .u-section-1 .u-text-3 {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 20px 0 0;
+    }
+
+    .u-section-1 .u-text-4 {
+        margin: 30px 0 0;
+    }
+
+    .u-section-1 .u-btn-1 {
+        border-style: none;
+        background-image: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+        margin: 20px 0 0;
+    }
+
+    .u-section-1 .u-list-item-2 {
+        box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+    }
+
+    .u-section-1 .u-container-layout-2 {
+        padding: 30px;
+    }
+
+    .u-section-1 .u-icon-2 {
+        height: 64px;
+        width: 64px;
+        background-image: none;
+        margin: 0 auto 0 0;
+    }
+
+    .u-section-1 .u-text-5 {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 20px 0 0;
+    }
+
+    .u-section-1 .u-text-6 {
+        margin: 30px 0 0;
+    }
+
+    .u-section-1 .u-btn-2 {
+        border-style: none;
+        background-image: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+        margin: 20px 0 0;
+    }
+
+    .u-section-1 .u-list-item-3 {
+        box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+    }
+
+    .u-section-1 .u-container-layout-3 {
+        padding: 30px;
+    }
+
+    .u-section-1 .u-icon-3 {
+        height: 64px;
+        width: 64px;
+        background-image: none;
+        margin: 0 auto 0 0;
+    }
+
+    .u-section-1 .u-text-7 {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 20px 0 0;
+    }
+
+    .u-section-1 .u-text-8 {
+        margin: 30px 0 0;
+    }
+
+    .u-section-1 .u-btn-3 {
+        border-style: none;
+        background-image: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+        margin: 20px 0 0;
+    }
+
+@media (max-width: 1199px) {
+    .u-section-1 {
+        min-height: 799px;
+    }
+
+        .u-section-1 .u-text-1 {
+            margin-left: 61px;
+            margin-right: 61px;
+        }
+
+        .u-section-1 .u-image-1 {
+            height: 432px;
+            margin-right: initial;
+            margin-left: initial;
+        }
+
+        .u-section-1 .u-list-1 {
+            height: auto;
+            width: 940px;
+            margin-top: -542px !important;
+        }
+
+        .u-section-1 .u-list-item-2 {
+            background-size: auto ;
+        }
+
+        .u-section-1 .u-list-item-3 {
+            background-size: auto;
+        }
+}
+
+@media (max-width: 991px) {
+    .u-section-1 {
+        min-height: 1087px;
+    }
+
+        .u-section-1 .u-text-1 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .u-section-1 .u-image-1 {
+            height: 659px !important;
+            margin-top: 221px !important;
+            margin-right: initial;
+            margin-left: initial;
+        }
+
+        .u-section-1 .u-list-1 {
+            width: 720px;
+            margin-top: -830px !important;
+        }
+
+        .u-section-1 .u-repeater-1 {
+            grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+        }
+}
+
+@media (max-width: 767px) {
+    .u-section-1 .u-text-2 {
+        width: 540px;
+    }
+
+    .u-section-1 .u-image-1 {
+        height: 879px !important;
+        margin-right: initial;
+        margin-left: initial;
+    }
+
+    .u-section-1 .u-list-1 {
+        width: 540px;
+        margin-top: -1050px !important;
+    }
+
+    .u-section-1 .u-repeater-1 {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .u-section-1 .u-text-2 {
+        width: 340px;
+    }
+
+    .u-section-1 .u-list-1 {
+        width: 340px;
+    }
+}

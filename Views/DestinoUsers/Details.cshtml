@@ -1,0 +1,94 @@
+﻿@model Agencia1.Models.DestinoUser
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="~/images0/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts0/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts0/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/vendor0/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/vendor0/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/css0/util.css">
+	<link rel="stylesheet" type="text/css" href="~/css0/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<dl class="row">
+					<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.País)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.País)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataSaida)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataSaida)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataChegada)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataChegada)
+        </dd>
+    </dl>
+	    <a asp-action="Edit" asp-route-id="@Model.Id_Destino">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="~/vendor0/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/bootstrap/js/popper.js"></script>
+	<script src="~/vendor0/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/daterangepicker/moment.min.js"></script>
+	<script src="~/vendor0/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="~/js0/main.js"></script>
+
+</body>
+</html>

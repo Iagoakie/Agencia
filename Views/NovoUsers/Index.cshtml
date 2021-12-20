@@ -1,0 +1,162 @@
+﻿@model IEnumerable<Agencia1.Models.NovoUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="The Islands of Tahiti">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Página Inicial</title>
+  
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+   
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página Inicial">
+    <meta property="og:type" content="website">
+
+
+  </head>
+  
+            </a>
+          </div> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="~/images0/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts0/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts0/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/vendor0/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/vendor0/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/css10/util.css">
+	<link rel="stylesheet" type="text/css" href="~/css10/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images0/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+                    <span class="login100-form-title p-b-34 p-t-27">
+						Cadastro Novo Usuário
+						</span>
+			<span class="login100-form-title p-b-34 p-t-27">
+			
+						<a asp-action="Create" button type="button" class="btn btn-primary ">Criar Novo</a> 
+						</span>
+								
+			<table class="table">	 
+				
+				<thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPF)
+            </th>
+			<th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+			<th>
+                @Html.DisplayNameFor(model => model.DestinoUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinoUser.DataChegada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinoUser.DataSaida)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>		
+		@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+			<td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+			<td>
+                @Html.DisplayFor(modelItem => item.DestinoUser.Cidade)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.DestinoUser.DataSaida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinoUser.DataChegada)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>	
+}</table>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+   
+ 
+<!--===============================================================================================-->
+	<script src="~/vendor0/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/bootstrap/js/popper.js"></script>
+	<script src="~/vendor0/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/daterangepicker/moment.min.js"></script>
+	<script src="~/vendor0/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="~/js0/main.js"></script>
+
+</body>
+</html>
+    
+</html>

@@ -1,0 +1,123 @@
+﻿@model IEnumerable<Agencia1.Models.DestinoUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="~/images0/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts0/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/fonts0/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/vendor0/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/vendor0/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="~/vendor0/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="~/css0/util.css">
+	<link rel="stylesheet" type="text/css" href="~/css0/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images0/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Cadastro Destino
+						</span>
+						
+						<span class="login100-form-title p-b-34 p-t-27">
+			
+						<a asp-action="Create" button type="button" class="btn btn-primary ">Criar Novo</a> 
+						</span>
+						
+			<table class="table">	 
+				
+				<thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.País)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cidade)
+            </th>
+			<th>
+                @Html.DisplayNameFor(model => model.DataSaida)
+            </th>
+			<th>
+                @Html.DisplayNameFor(model => model.DataChegada)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+		
+		@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.País)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cidade)
+            </td>
+			<td>
+                @Html.DisplayFor(modelItem => item.DataSaida)
+            </td>
+			<td>
+                @Html.DisplayFor(modelItem => item.DataChegada)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_Destino">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_Destino">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_Destino">Delete</a>
+            </td>
+        </tr>	
+}</table>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="~/vendor0/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/bootstrap/js/popper.js"></script>
+	<script src="~/vendor0/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/daterangepicker/moment.min.js"></script>
+	<script src="~/vendor0/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="~/vendor0/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="~/js0/main.js"></script>
+
+</body>
+</html>
