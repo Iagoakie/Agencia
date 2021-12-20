@@ -23,3 +23,6 @@ Criar as páginas: Home, Destino, Promoções, Contato e as demais de acordo com
 2º Passo:  
 
 Criar versão do frontend anterior usando o framework Bootstrap, com o conceito de responsividade. (Esta versão deve ser o frontend que vai fazer a conexão com banco de dados e o padrão MVC) 
+<div align-center>
+<img width="476" alt="Captura de tela 2021-12-19 221643" src="https://user-images.githubusercontent.com/89924048/146701109-e12a1cbc-2297-41c4-8c59-f9b243936f89.png">
+</div>
